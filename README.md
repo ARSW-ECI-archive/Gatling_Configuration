@@ -1,12 +1,14 @@
 
-## Configuración básica de Gatling
+## Configuración básica de Gatling (para equipos del laboaratorio con Linux)
+
+
 
 1.  Descargar gatling de <http://gatling.io/download/>
 
 > ![](.//media/image1.jpeg)
 
 
-2.  Ejecutar recorder.bat (Windows) o recorder.sh(Linux) en /bin
+2.  Ejecutar recorder.sh(Linux) en /bin o recorder.bat (si usa Windows)
 
 > ![](.//media/image2.jpeg)
 
@@ -28,7 +30,7 @@ Puerto por el que el proxy va a funcionar (Debe ser distinto al de la aplicació
 
 > ![](.//media/image13.png)
 
-6. (En LINUX) Cierre todas las instancias de Chrome, y ejecútelo de manera que haga uso del Proxy HTTP de Gatling (tenga cuidado en asociar el mismo puerto configurado en el dicho Proxy):
+6. Debe configurar un navegador Web para que haga uso del proxy de Gatling. Si no tiene permisos sobre el sistema operativo (para Linux) cierre todas las instancias de Chrome, y ejecútelo de manera que haga uso del Proxy HTTP de Gatling (tenga cuidado en asociar el mismo puerto configurado en el dicho Proxy):
 
     ```bash
     google-chrome --proxy-server="http://localhost:8081"
